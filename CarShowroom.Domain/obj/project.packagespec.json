@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj": {
+            "projectPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -29,6 +33,10 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+          "target": "Package",
+          "version": "[6.1.1, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

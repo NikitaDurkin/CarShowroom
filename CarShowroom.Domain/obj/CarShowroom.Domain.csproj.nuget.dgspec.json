@@ -4,14 +4,14 @@
     "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj": {
+    "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj",
-        "projectName": "CarShowroom.Domain",
-        "projectPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj",
+        "projectName": "CarShowroom.Database",
+        "projectPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj",
         "packagesPath": "C:\\Users\\spart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\obj\\",
+        "outputPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -39,6 +39,68 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj",
+        "projectName": "CarShowroom.Domain",
+        "projectPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj",
+        "packagesPath": "C:\\Users\\spart\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\spart\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj": {
+                "projectPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Database\\CarShowroom.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

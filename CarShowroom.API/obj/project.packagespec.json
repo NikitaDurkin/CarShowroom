@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj": {
+            "projectPath": "C:\\Users\\spart\\RiderProjects\\CarShowroom\\CarShowroom.Domain\\CarShowroom.Domain.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -29,14 +33,25 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+          "target": "Package",
+          "version": "[6.1.1, )"
+        },
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
         },
-        "Microsoft.AspNetCore.Razor.Design": {
-          "suppressParent": "All",
+        "Microsoft.AspNetCore.StaticFiles": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[2.2.6, )"
+        },
+        "Microsoft.Extensions.Configuration.Abstractions": {
           "target": "Package",
           "version": "[2.2.0, )"
         },
@@ -45,6 +60,22 @@
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
+        },
+        "Npgsql.EntityFrameworkCore.PostgreSQL": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Swashbuckle.AspNetCore.Swagger": {
+          "target": "Package",
+          "version": "[4.0.0, )"
+        },
+        "Swashbuckle.AspNetCore.SwaggerGen": {
+          "target": "Package",
+          "version": "[4.0.0, )"
+        },
+        "Swashbuckle.AspNetCore.SwaggerUi": {
+          "target": "Package",
+          "version": "[4.0.0, )"
         }
       },
       "imports": [
