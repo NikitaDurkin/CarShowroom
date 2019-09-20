@@ -48,7 +48,7 @@ namespace CarShowroom.API.Controllers
         /// <param name="carModel">Модель автомобиля</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<Guid> CreateCar([FromBody] CarModel carModel)
+        public async Task<Guid> CreateCar(CarModel carModel)
         {
             return await _carService.CreateCar(carModel);
         }
@@ -60,7 +60,7 @@ namespace CarShowroom.API.Controllers
         /// <param name="carModel">Модель автомобиля</param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<Guid> UpdateCar([FromBody] Guid guid, CarModel carModel)
+        public async Task<Guid> UpdateCar(Guid guid, CarModel carModel)
         {
             return await _carService.UpdateCar(guid, carModel);
         }

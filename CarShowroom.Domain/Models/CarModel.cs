@@ -8,11 +8,6 @@ namespace CarShowroom.Domain.Models
     public class CarModel
     {
         /// <summary>
-        /// Уникальный идентификатор автомобиля
-        /// </summary>
-        public Guid Guid { get; set; }
-        
-        /// <summary>
         /// Регистрационный номер
         /// </summary>
         public string RegistryNumber { get; set; }

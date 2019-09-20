@@ -54,7 +54,6 @@ namespace CarShowroom.Domain.Services
             car.Color = carModel.Color;
             car.Conditioner = carModel.Conditioner;
             car.Fuel = carModel.Fuel;
-            car.Guid = carModel.Guid;
             car.Interior = carModel.Interior;
             car.Manufacturer = carModel.Manufacturer;
             car.Milage = carModel.Milage;

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.Configuration;
@@ -15,6 +17,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
 namespace CarShowroom.API
@@ -47,6 +50,15 @@ namespace CarShowroom.API
 
             services.AddDomain();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                    {Title = "CarShowroom", Version = "v1"});
+                
+//                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+//                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+//                c.IncludeXmlComments(xmlPath);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -59,7 +71,6 @@ namespace CarShowroom.API
             {
                 app.UseHsts();
             }
-
             app.UseSwagger();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarShowroom"); });
 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\spart\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\spart\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CarShowroom.-675259969.00" t="ExcludeRecursive" />
+    <e p="C:\Users\spart\RiderProjects\CarShowroom" t="IncludeFlat">
+      <e p="CarShowroom.API" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CarShowroom.API.csproj" t="IncludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="CarController.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190920143531_init.cs" t="Include" />
+          <e p="20190920143531_init.Designer.cs" t="Include" />
+          <e p="DatabaseContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="CarShowroom.API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="CarShowroom.Database" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CarShowroom.Database.csproj" t="IncludeRecursive" />
+        <e p="DatabaseContext.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Car.cs" t="Include" />
+          <e p="Client.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="CarShowroom.Database.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CarShowroom.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CarShowroom.Domain.csproj" t="IncludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="ICarService.cs" t="Include" />
+          <e p="IClientService.cs" t="Include" />
+          <e p="IOrderService.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="CarModel.cs" t="Include" />
+          <e p="ClientModel.cs" t="Include" />
+          <e p="OrderModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="CarShowroom.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ServiceExtesions.cs" t="Include" />
+        <e p="Services" t="Include">
+          <e p="CarService.cs" t="Include" />
+          <e p="ClientService.cs" t="Include" />
+          <e p="OrderService.cs" t="Include" />
+        </e>
+        <e p="Utils" t="Include">
+          <e p="MappingProfile.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CarShowroom.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

@@ -13,6 +13,7 @@ namespace CarShowroom.Database.Models
         /// </summary>
         [Key]
         public Guid Guid { get; set; }
+        
         /// <summary>
         /// Регистрационный номер
         /// </summary>
