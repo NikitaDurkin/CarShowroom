@@ -4,7 +4,6 @@ C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\bin\Debug\netcoreapp
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\bin\Debug\netcoreapp2.2\CarShowroom.Database.dll
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\bin\Debug\netcoreapp2.2\CarShowroom.Database.pdb
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\obj\Debug\netcoreapp2.2\CarShowroom.Domain.csprojAssemblyReference.cache
-C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\obj\Debug\netcoreapp2.2\CarShowroom.Domain.csproj.CoreCompileInputs.cache
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\obj\Debug\netcoreapp2.2\CarShowroom.Domain.AssemblyInfoInputs.cache
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\obj\Debug\netcoreapp2.2\CarShowroom.Domain.AssemblyInfo.cs
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Domain\obj\Debug\netcoreapp2.2\CarShowroom.Domain.csproj.CopyComplete

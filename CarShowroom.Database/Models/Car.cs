@@ -25,6 +25,11 @@ namespace CarShowroom.Database.Models
         public string Brand { get; set; }
 
         /// <summary>
+        /// Модель
+        /// </summary>
+        public string Model { get; set; }
+
+        /// <summary>
         /// Производитель
         /// </summary>
         public string Manufacturer { get; set; }
@@ -32,32 +37,32 @@ namespace CarShowroom.Database.Models
         /// <summary>
         /// Объем двигателя
         /// </summary>
-        public float EngineVolume { get; set; }
+        public string EngineVolume { get; set; }
 
         /// <summary>
         /// Мощьность двигателя
         /// </summary>
-        public float EnginePower { get; set; }
+        public string EnginePower { get; set; }
 
         /// <summary>
         /// Расход топлива
         /// </summary>
-        public float FuelConsumption { get; set; }
+        public string FuelConsumption { get; set; }
 
         /// <summary>
         /// Количество дверей
         /// </summary>
-        public int DoorsNumber { get; set; }
+        public string DoorsNumber { get; set; }
 
         /// <summary>
         /// Количество мест
         /// </summary>
-        public int SeatsNumber { get; set; }
+        public string SeatsNumber { get; set; }
 
         /// <summary>
         /// Вместимость багажника
         /// </summary>
-        public int VolumeTrunk { get; set; }
+        public string VolumeTrunk { get; set; }
 
         /// <summary>
         /// Автоматическая коробка передач

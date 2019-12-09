@@ -50,6 +50,7 @@ namespace CarShowroom.Domain.Services
         {
             Car car = _context.Cars.Find(guid);
             car.Brand = carModel.Brand;
+            car.Model = carModel.Model;
             car.Client = carModel.Client;
             car.Color = carModel.Color;
             car.Conditioner = carModel.Conditioner;

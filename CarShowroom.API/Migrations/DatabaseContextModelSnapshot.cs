@@ -36,15 +36,15 @@ namespace CarShowroom.API.Migrations
 
                     b.Property<bool>("CruiseControl");
 
-                    b.Property<int>("DoorsNumber");
+                    b.Property<string>("DoorsNumber");
 
-                    b.Property<float>("EnginePower");
+                    b.Property<string>("EnginePower");
 
-                    b.Property<float>("EngineVolume");
+                    b.Property<string>("EngineVolume");
 
                     b.Property<string>("Fuel");
 
-                    b.Property<float>("FuelConsumption");
+                    b.Property<string>("FuelConsumption");
 
                     b.Property<bool>("GpsNavigator");
 
@@ -54,23 +54,81 @@ namespace CarShowroom.API.Migrations
 
                     b.Property<string>("Milage");
 
+                    b.Property<string>("Model");
+
                     b.Property<string>("Price");
 
                     b.Property<bool>("Radio");
 
                     b.Property<string>("RegistryNumber");
 
-                    b.Property<int>("SeatsNumber");
+                    b.Property<string>("SeatsNumber");
 
                     b.Property<DateTime>("TO");
 
                     b.Property<bool>("Video");
 
-                    b.Property<int>("VolumeTrunk");
+                    b.Property<string>("VolumeTrunk");
 
                     b.HasKey("Guid");
 
                     b.ToTable("Cars");
+
+                    b.HasData(
+                        new
+                        {
+                            Guid = new Guid("05f2193b-a72a-4d84-b80c-52bb1d60d8d1"),
+                            AutomaticTransmission = true,
+                            Brand = "Toyota",
+                            Client = "Иванов Иван Иванович",
+                            Color = "Black",
+                            Conditioner = true,
+                            CruiseControl = true,
+                            DoorsNumber = "5",
+                            EnginePower = "167",
+                            EngineVolume = "2.4",
+                            Fuel = "АИ-95",
+                            FuelConsumption = "12",
+                            GpsNavigator = true,
+                            Interior = "Leather",
+                            Manufacturer = "Япония",
+                            Milage = "200000",
+                            Model = "Camry",
+                            Price = "600000",
+                            Radio = true,
+                            RegistryNumber = "А000АА00",
+                            SeatsNumber = "5",
+                            TO = new DateTime(2019, 6, 9, 17, 24, 48, 4, DateTimeKind.Local).AddTicks(3699),
+                            Video = true,
+                            VolumeTrunk = "300"
+                        },
+                        new
+                        {
+                            Guid = new Guid("046e6f37-ef7e-4117-be56-03ec7d516212"),
+                            AutomaticTransmission = true,
+                            Brand = "Mecedes-Benz",
+                            Client = "Петров Петр Петрович",
+                            Color = "Black",
+                            Conditioner = true,
+                            CruiseControl = true,
+                            DoorsNumber = "5",
+                            EnginePower = "345",
+                            EngineVolume = "5.0",
+                            Fuel = "АИ-95",
+                            FuelConsumption = "20",
+                            GpsNavigator = true,
+                            Interior = "Leather",
+                            Manufacturer = "Германия",
+                            Milage = "200000",
+                            Model = "E-classe",
+                            Price = "600000",
+                            Radio = true,
+                            RegistryNumber = "А111АА11",
+                            SeatsNumber = "5",
+                            TO = new DateTime(2019, 6, 9, 17, 24, 48, 5, DateTimeKind.Local).AddTicks(1309),
+                            Video = true,
+                            VolumeTrunk = "300"
+                        });
                 });
 
             modelBuilder.Entity("CarShowroom.Database.Models.Client", b =>

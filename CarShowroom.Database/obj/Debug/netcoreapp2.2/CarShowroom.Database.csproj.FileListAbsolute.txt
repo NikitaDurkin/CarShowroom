@@ -2,7 +2,6 @@ C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\bin\Debug\netcorea
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\bin\Debug\netcoreapp2.2\CarShowroom.Database.dll
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\bin\Debug\netcoreapp2.2\CarShowroom.Database.pdb
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\obj\Debug\netcoreapp2.2\CarShowroom.Database.csprojAssemblyReference.cache
-C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\obj\Debug\netcoreapp2.2\CarShowroom.Database.csproj.CoreCompileInputs.cache
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\obj\Debug\netcoreapp2.2\CarShowroom.Database.AssemblyInfoInputs.cache
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\obj\Debug\netcoreapp2.2\CarShowroom.Database.AssemblyInfo.cs
 C:\Users\spart\RiderProjects\CarShowroom\CarShowroom.Database\obj\Debug\netcoreapp2.2\CarShowroom.Database.dll
