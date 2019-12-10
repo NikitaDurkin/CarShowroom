@@ -33,6 +33,15 @@ namespace CarShowroom.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder.WithOrigins("http://localhost:9005/", "http://localhost:5000/CarShowroom/Car/GetAll")
+                        .AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                });
+            });
+            
             services.AddEntityFrameworkNpgsql().AddDbContext<DatabaseContext>(options =>
                 options.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"),
                     b => b.MigrationsAssembly("CarShowroom.API")));
@@ -72,6 +81,7 @@ namespace CarShowroom.API
                 app.UseHsts();
             }
             app.UseSwagger();
+            app.UseCors("CorsPolicy");
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarShowroom"); });
 
             app.UseMvc();

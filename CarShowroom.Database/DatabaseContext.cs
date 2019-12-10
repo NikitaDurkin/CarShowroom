@@ -9,6 +9,7 @@ namespace CarShowroom.Database
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
         }
+
         public DbSet<Car> Cars { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Order> Orders { get; set; }
@@ -70,7 +71,7 @@ namespace CarShowroom.Database
                 Price = "600000",
                 Client = "Петров Петр Петрович"
             };
-            
+
             modelBuilder.Entity<Car>().HasData(
                 car,
                 car1
