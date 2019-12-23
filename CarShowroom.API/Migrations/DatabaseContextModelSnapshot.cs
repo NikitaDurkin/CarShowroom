@@ -77,7 +77,7 @@ namespace CarShowroom.API.Migrations
                     b.HasData(
                         new
                         {
-                            Guid = new Guid("05f2193b-a72a-4d84-b80c-52bb1d60d8d1"),
+                            Guid = new Guid("9edb2ab6-0d09-4ca0-9e45-ed0760ffab32"),
                             AutomaticTransmission = true,
                             Brand = "Toyota",
                             Client = "Иванов Иван Иванович",
@@ -98,14 +98,14 @@ namespace CarShowroom.API.Migrations
                             Radio = true,
                             RegistryNumber = "А000АА00",
                             SeatsNumber = "5",
-                            TO = new DateTime(2019, 6, 9, 17, 24, 48, 4, DateTimeKind.Local).AddTicks(3699),
+                            TO = new DateTime(2019, 6, 23, 11, 42, 9, 881, DateTimeKind.Local).AddTicks(2638),
                             Video = true,
                             VolumeTrunk = "300"
                         },
                         new
                         {
-                            Guid = new Guid("046e6f37-ef7e-4117-be56-03ec7d516212"),
-                            AutomaticTransmission = true,
+                            Guid = new Guid("6bcfee3e-f3b5-4446-90fa-d85bcd583e89"),
+                            AutomaticTransmission = false,
                             Brand = "Mecedes-Benz",
                             Client = "Петров Петр Петрович",
                             Color = "Black",
@@ -125,7 +125,7 @@ namespace CarShowroom.API.Migrations
                             Radio = true,
                             RegistryNumber = "А111АА11",
                             SeatsNumber = "5",
-                            TO = new DateTime(2019, 6, 9, 17, 24, 48, 5, DateTimeKind.Local).AddTicks(1309),
+                            TO = new DateTime(2019, 6, 23, 11, 42, 9, 881, DateTimeKind.Local).AddTicks(8955),
                             Video = true,
                             VolumeTrunk = "300"
                         });
@@ -158,7 +158,7 @@ namespace CarShowroom.API.Migrations
 
                     b.Property<Guid?>("ClientGuid");
 
-                    b.Property<DateTime>("DateTime");
+                    b.Property<DateTimeOffset>("DateTime");
 
                     b.Property<string>("Status");
 

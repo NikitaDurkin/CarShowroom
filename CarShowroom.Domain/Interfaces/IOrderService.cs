@@ -37,5 +37,12 @@ namespace CarShowroom.Domain.Interfaces
         /// <param name="orderModel">Модель заказа</param>
         /// <returns></returns>
         Task<Guid> UpdateOrder(Guid guid, OrderModel orderModel);
+
+        /// <summary>
+        /// Удвление заказа
+        /// </summary>
+        /// <param name="guid">Уникальный идентификатор заказа</param>
+        /// <returns></returns>
+        Task DeleteOrder(Guid guid);
     }
 }

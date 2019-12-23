@@ -12415,6 +12415,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.StaticFiles >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 2.2.6",
+      "Microsoft.Extensions.Configuration >= 2.2.0",
       "Microsoft.Extensions.Configuration.Abstractions >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.2.0",
@@ -12484,6 +12485,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "[2.2.6, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.Extensions.Configuration.Abstractions": {
             "target": "Package",

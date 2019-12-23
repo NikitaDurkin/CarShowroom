@@ -10,6 +10,7 @@
         <PackageReference Include="Microsoft.AspNetCore.App" />
         <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.0" />
@@ -19,6 +20,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CarShowroom.Domain\CarShowroom.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\index-bundle.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\index.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\index.html" />
     </ItemGroup>
 
 </Project>

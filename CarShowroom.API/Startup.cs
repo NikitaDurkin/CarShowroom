@@ -24,26 +24,31 @@ namespace CarShowroom.API
 {
     public class Startup
     {
-        public readonly IConfiguration _configuration;
+        public  IConfiguration Configuration;
 
         public Startup(IConfiguration configuration)
         {
-            _configuration = configuration;
+            Configuration = configuration;
         }
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy", builder =>
-                {
-                    builder.WithOrigins("http://localhost:9005/", "http://localhost:5000/CarShowroom/Car/GetAll")
-                        .AllowAnyHeader().AllowAnyMethod().AllowCredentials();
-                });
-            });
+//            services.AddCors(options =>
+//            {
+//                options.AddPolicy("CorsPolicy", builder =>
+//                {
+//                    builder.WithOrigins("http://localhost:9004",
+//                            "http://127.0.0.1:9004",
+//                            "http://localhost:9005",
+//                            "http://127.0.0.1:9005");
+//                        //.AllowAnyHeader()
+//                        //.AllowAnyMethod()
+//                        //.AllowCredentials();
+//                });
+//            });
             
             services.AddEntityFrameworkNpgsql().AddDbContext<DatabaseContext>(options =>
-                options.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"),
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
                     b => b.MigrationsAssembly("CarShowroom.API")));
            
             #region AutoMapper
@@ -81,7 +86,7 @@ namespace CarShowroom.API
                 app.UseHsts();
             }
             app.UseSwagger();
-            app.UseCors("CorsPolicy");
+            //app.UseCors();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarShowroom"); });
 
             app.UseMvc();

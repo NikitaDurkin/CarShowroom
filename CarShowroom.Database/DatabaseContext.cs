@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using CarShowroom.Database.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -57,7 +58,7 @@ namespace CarShowroom.Database
                 DoorsNumber = "5",
                 SeatsNumber = "5",
                 VolumeTrunk = "300",
-                AutomaticTransmission = true,
+                AutomaticTransmission = false,
                 CruiseControl = true,
                 Fuel = "АИ-95",
                 Conditioner = true,
@@ -71,10 +72,30 @@ namespace CarShowroom.Database
                 Price = "600000",
                 Client = "Петров Петр Петрович"
             };
+            
+//            var client = new Client
+//            {
+//                Guid = Guid.NewGuid(),
+//                FullName = "Иванов Иван Иванович",
+//                Address = "г.Обнинск, ул. Ленина д.355 кв.1",
+//                Email = "Ivanov@mail.ru",
+//                Phone = "89999999999",
+//                Orders = new List<Order>()
+//            };
+//            
+//            var order = new Order
+//            { 
+//                DateTime = DateTimeOffset.Now,
+//                Client = Guid.Parse("05f2193b-a72a-4d84-b80c-52bb1d60d8d1"),
+//                TestDrive = true,
+//                Status = "На тесте"
+//            };
 
             modelBuilder.Entity<Car>().HasData(
                 car,
                 car1
+                //client,
+                //order
             );
             base.OnModelCreating(modelBuilder);
         }
