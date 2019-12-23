@@ -4,17 +4,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: { main: path.resolve(__dirname, 'src', 'index.js') },
+  entry: {
+    main: path.resolve(__dirname, 'src', 'index.jsx'),
+  },
   output: {
     path: path.join(__dirname, '..', 'CarShowroom.API', 'wwwroot'),
     filename: 'index-bundle.js',
     publicPath: '/',
   },
-  performance: {
-    hints: false
-  },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [' ', '.js', '.jsx'],
   },
   module: {
     rules: [
@@ -30,7 +29,7 @@ module.exports = {
         use: ExtractTextPlugin.extract(
           {
             fallback: 'style-loader',
-            use: ['css-loader'],
+            use: ['css-loader', 'sass-loader'],
           },
         ),
       },
@@ -38,22 +37,10 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin(
-      { filename: 'index.css' },
+      { filename: 'style.css' },
     ),
     new HtmlWebpackPlugin({
-      inject: 'body',
-      hash: true,
       template: './src/index.html',
-      filename: 'index.html',
     }),
   ],
-
-  devServer: {
-    contentBase: path.join(__dirname, '..', 'CarShowroom.API', 'wwwroot'),
-    port: 9000,
-    compress: true,
-    watchContentBase: true,
-    open: true,
-    writeToDisk: true
-  }
 };
